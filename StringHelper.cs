@@ -23,4 +23,9 @@ public static class StringHelper
     {
         return txt.Length > len ? txt.Substring(txt.Length - len) : txt;
     }
+
+    public static string set(this string txt, params object[] args)
+    {
+        return string.Format(txt, args);
+    }
 }
