@@ -13,7 +13,7 @@ public static class ToStringHelper
 
     public static string ToStringHelperDDMMYYYYHHMMSS(this DateTime d)
     {
-        return d.ToString("dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+        return d.ToString("dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
     }
 
     public static string ToStringHelperXML(this DateTime d)
